@@ -53,3 +53,6 @@ async def check_image(file: UploadFile = File(...)):
     image_bytes = await file.read()
     return evaluate_image(image_bytes)
 
+@app.get("/")
+def root():
+    return {"message": "Verity is running!"}
