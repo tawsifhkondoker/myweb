@@ -52,6 +52,4 @@ async def check_image(file: UploadFile = File(...)):
         raise HTTPException(status_code=400, detail="uploaded file is not an image")
     image_bytes = await file.read()
     return evaluate_image(image_bytes)
-@app.get("/")
-def root():
-    return {"message": "Hello, Verity!"}
+
