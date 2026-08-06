@@ -17,7 +17,7 @@ try:
     # 👇 CHANGE THIS TO YOUR ACTUAL HUGGING FACE MODEL ID
     # If you uploaded to HF, use: "tawsifhkondoker/claim-classifier"
     # If you haven't uploaded yet, keep using the local folder for now.
-    MODEL_ID = "./claim_classifier_model"  # local folder fallback
+    MODEL_ID = "tawsif23984/claim-classifier"  # local folder fallback
 
     claim_pipeline = pipeline("text-classification", model=MODEL_ID)
     USE_ML = True
